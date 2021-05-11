@@ -1,0 +1,162 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+   height: 400px
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+<script type="text/javascript">
+
+function validateform()
+{
+	var x=document.Enquiry.email.value;  
+	var atposition=x.indexOf("@");  
+	var dotposition=x.lastIndexOf(".");  
+	if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+	  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+	  status=true;
+	   
+	  }  }
+function status
+{
+	window.location.href='home.html';
+	}
+</script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">GarudMachines</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="ourteam.html">Our Team</a></li>
+          <li><a href="mission.html">Mission & Vision</a></li>
+          <li><a href="#">Milestones</a></li>
+          <li><a href="majorcustomers.html">Our Major Customers</a></li>
+          <li><a href="https://www.google.com/maps/place/Garud+Machines/@28.6859177,77.4233183,17z/data=!3m1!4b1!4m5!3m4!1s0x390cf123cdf04627:0x36bd7206309001c0!8m2!3d28.685913!4d77.425507">Get Directions</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Assets<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="millingmachine.html">Milling Machine</a></li>
+          <li><a href="lathemachine.html">Lathe Machine</a></li>
+          <li><a href="surfacegrinder.html">Surface Grinder</a></li>
+          <li><a href="drillmachine.html">Drill Machine</a></li>
+          <li><a href="portableweldingmachine.html">Portable Welding Machine</a></li>
+        </ul>
+      </li>
+      <li><a href="quality.html">Quality Assurance</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">GarudPortal</a></li>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+          
+          </div>
+          </div>
+          </form>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h2 align="center" style="color:red;">Contact Us</h2>
+<div class="row">
+  <div class="column">
+    <h2>Get In Touch</h2>
+
+
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSedwnfLEw-WFXzPChwSrMbkStaXZMVnv8_HJ8neeXTYz2a7zw/formResponse" name="Enquiry" method="post" onsubmit="return validateform();">
+    <label for="fname">Full Name</label>
+    <input type="text" id="name" name="entry.61389452" placeholder="Your name.." required>
+<br>
+<label for="Mobile Number">Mobile Number</label>
+    <input type="text" id="mobile" name="entry.147188494" placeholder="Enter Mobile Number" required>
+<br>
+
+    <label for="Email">Email id</label>
+    <input type="text" id="email" name="entry.1202609051" placeholder="Your Email id" required>
+<br>
+<label for="Message">Message</label>
+    <textarea id="Message" name="entry.729023285" placeholder="Write something.." style="height:200px" required></textarea>
+  <input  type="submit" class="registerbtn" value="Submit" onSubmit="alert('Thank you for your feedback.');"/>
+ </form>   
+  </div>
+  <div class="column" style="color:orange;"">
+    <img src="Pics/garud.png" alt="img not found">
+    <h2>Address</h2>
+    <p>GARUD MACHINES<br>
+GSTIN: 09EJCPS2155H1Z0<br>
+ADD.: SHOP NO. 3 STREET NO 9 SIHANI ROAD GHAZIABAD U.P<br>
+Mayank Sharma<br>
+Cont. no. 7351367504 / 8630240516<br>
+EMAIL. GARUDMACHINES@GMAIL.COM<br></p>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
